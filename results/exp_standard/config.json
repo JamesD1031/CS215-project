@@ -1,0 +1,67 @@
+{
+  "algorithms": [
+    "edmonds_karp",
+    "dinic"
+  ],
+  "exp_name": "standard",
+  "graph_families": [
+    {
+      "name": "erdos_renyi",
+      "params": {
+        "cap_max": 20,
+        "n_values": [
+          200,
+          300,
+          400
+        ],
+        "p_values": [
+          0.05,
+          0.08
+        ]
+      }
+    },
+    {
+      "name": "layered",
+      "params": {
+        "cap_max": 20,
+        "layers_values": [
+          8,
+          10
+        ],
+        "p": 0.35,
+        "width_values": [
+          25,
+          30
+        ]
+      }
+    },
+    {
+      "name": "bipartite",
+      "params": {
+        "n_values": [
+          150,
+          200,
+          250
+        ],
+        "p_values": [
+          0.05,
+          0.08
+        ]
+      }
+    }
+  ],
+  "output_dir": "results/exp_standard",
+  "repeats": 15,
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ]
+}
